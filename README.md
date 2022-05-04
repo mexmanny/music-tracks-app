@@ -18,6 +18,20 @@ You may also see any lint errors in the console.
 
 Will run both the front end and backend so that you can access the website and see a tracklist on http://localhost:3000/ , if you want to get more information on a specific track click on the image of whichever track you would like to learn more about.
 
+- You will be able to see the following list of tracks
+
+<img width="1331" alt="Screen Shot 2022-05-04 at 1 12 56 PM" src="https://user-images.githubusercontent.com/20760707/166742769-23d4485e-a4f9-4d61-b615-fae56002ef5b.png">
+
+- Be able to select track that you want to get more information about by clicking on the image of that track
+
+<img width="1366" alt="Screen Shot 2022-05-04 at 1 13 46 PM" src="https://user-images.githubusercontent.com/20760707/166743096-15843806-4c2e-41b7-b899-b3f115c529de.png">
+
+- The step above will load a new page showing more information of the track you selected
+
+<img width="1417" alt="Screen Shot 2022-05-04 at 1 14 14 PM" src="https://user-images.githubusercontent.com/20760707/166743208-d296a33d-077d-4cd6-9f33-e00c7b905dd0.png">
+
+
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
