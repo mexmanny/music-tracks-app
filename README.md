@@ -30,6 +30,10 @@ Will run both the front end and backend so that you can access the website and s
 
 <img width="1417" alt="Screen Shot 2022-05-04 at 1 14 14 PM" src="https://user-images.githubusercontent.com/20760707/166743208-d296a33d-077d-4cd6-9f33-e00c7b905dd0.png">
 
+- Once you are done you can got the button above to go back to the home page and select more tracks
+
+<img width="1009" alt="Screen Shot 2022-05-04 at 1 19 24 PM" src="https://user-images.githubusercontent.com/20760707/166743626-e0cf70aa-b49b-488f-846b-e605ac8d7350.png">
+
 
 
 ### `npm run build`
