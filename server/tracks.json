@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Jungle Bae",
+    "artist": "Jack Ü",
+    "genre": "Dance/Electronic",
+    "duration": "3:28"
+  },
+
+  {
+    "id": 2,
+    "title": "Happy Place",
+    "artist": "Alison Wonderland",
+    "genre": "Future Bass",
+    "duration": "3:21"
+  },
+
+  {
+    "id": 3,
+    "title": "Drive Away",
+    "artist": "Krewella",
+    "genre": "Electronic Dance Music",
+    "duration": "3:56"
+  },
+
+  {
+    "id": 4,
+    "title": "Stole the Show",
+    "artist": "Kygo",
+    "genre": "Tropical House",
+    "duration": "3:45"
+  },
+
+  {
+    "id": 5,
+    "title": "Learn To Love Again",
+    "artist": "Audien",
+    "genre": "Progressive House",
+    "duration": "3:50"
+  },
+
+  {
+    "id": 6,
+    "title": "Where Are Ü Now ?",
+    "artist": "Jack Ü with Justin Bieber",
+    "genre": "Dance/Electronic",
+    "duration": "4:11"
+  },
+
+  {
+    "id": 7,
+    "title": "Surrender",
+    "artist": "Cash Cash",
+    "genre": "Progressive House",
+    "duration": "4:11"
+  },
+
+  {
+    "id": 8,
+    "title": "Summer",
+    "artist": "Calvin Harris",
+    "genre": "Electronic Dance Music",
+    "duration": "3:54"
+  }
+]
