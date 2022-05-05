@@ -11,7 +11,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3001/graphql](http://localhost:3001/graphql) to view the backend api and see the graphical interface to make graphql queries
 
-The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm run both`
@@ -27,12 +26,11 @@ Will run both the front end and backend so that you can access the website and s
 <img width="1366" alt="Screen Shot 2022-05-04 at 1 13 46 PM" src="https://user-images.githubusercontent.com/20760707/166743096-15843806-4c2e-41b7-b899-b3f115c529de.png">
 
 - The step above will load a new page showing more information of the track you selected
+![Screen Shot 2022-05-05 at 5 06 06 AM](https://user-images.githubusercontent.com/20760707/166893751-2c466a6c-f30d-44fe-9d75-442a1db1fa9e.png)
 
-<img width="1417" alt="Screen Shot 2022-05-04 at 1 14 14 PM" src="https://user-images.githubusercontent.com/20760707/166743208-d296a33d-077d-4cd6-9f33-e00c7b905dd0.png">
+- Once you are done you can got the button on the top of the page to go back home to select more tracks
+![Screen Shot 2022-05-05 at 5 04 13 AM](https://user-images.githubusercontent.com/20760707/166893621-ad2bbea8-8fa6-4d96-81b8-1da305cf9477.png)
 
-- Once you are done you can got the button above to go back to the home page and select more tracks
-
-![Screen Shot 2022-05-05 at 5 02 08 AM](https://user-images.githubusercontent.com/20760707/166892794-3946a4a1-2a45-4327-b364-3eb77aa6559d.png)
 
 
 ### `npm run build`
