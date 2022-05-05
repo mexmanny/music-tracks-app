@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the Node.js API in the development mode.\
 Open [http://localhost:3001/graphql](http://localhost:3001/graphql) to view the backend api and see the graphical interface to make graphql queries
 
 You may also see any lint errors in the console.
