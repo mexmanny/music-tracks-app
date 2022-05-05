@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import TrackCard from "../TrackCard/index";
+import TrackCard from "../Components/TrackCard/index";
 import styled from "@emotion/styled";
 
 const Wrapper = styled.div`

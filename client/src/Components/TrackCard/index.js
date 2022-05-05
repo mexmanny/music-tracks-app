@@ -32,8 +32,6 @@ query {
   }, [props.track.id, IMG_QUERY]);
   return (
     <>
-      <title>{props.track.title}</title>
-
       <Link
         state={{ imgUrl: image?.imgUrl }}
         style={{ width: "90%", display: "block", margin: "0 auto" }}

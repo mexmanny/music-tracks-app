@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Nav = styled.nav`
   font: bold;
-  background: black;
+  background: none;
 `;
 
 export const NavContainer = styled.div`

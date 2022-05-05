@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import TrackCardDetails from "../TrackCardDetails";
-import NavBar from "../NavBar";
+import TrackCardDetails from "../Components/TrackDetailsCard";
+import NavBar from "../Components/NavBar";
 import styled from "@emotion/styled";
 
 const Wrapper = styled.div`
@@ -51,6 +51,7 @@ function TrackDetails() {
       <>
         <NavBar />
         <Wrapper>
+          <title>{trackData.title}</title>
           <TrackCardDetails track={trackData} />
         </Wrapper>
       </>
