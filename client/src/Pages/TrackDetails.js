@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import TrackDetailsCard from "../Components/TrackDetailsCard";
-import NavBar from "../Components/NavBar";
+import TrackDetailsCard from "../components/TrackDetailsCard";
+import NavBar from "../components/NavBar";
 import styled from "@emotion/styled";
 import { getTrackById } from "../services/TrackServices";
 

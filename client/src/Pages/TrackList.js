@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import TrackCard from "../Components/TrackCard/index";
+import TrackCard from "../components/TrackCard/index";
 import styled from "@emotion/styled";
 import { getAllTracks } from "../services/TrackServices";
 
