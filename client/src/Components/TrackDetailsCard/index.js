@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TrackBackground, TrackContainer } from "../TrackCard/style";
 
-const TrackCardDetails = ({ track }) => {
+const TrackDetailsCard = ({ track }) => {
   const [image, setImage] = useState(null);
 
   useEffect(() => {
@@ -41,4 +41,4 @@ const TrackCardDetails = ({ track }) => {
   );
 };
 
-export default TrackCardDetails;
+export default TrackDetailsCard;
