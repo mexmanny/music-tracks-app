@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import TrackCardDetails from "../Components/TrackDetailsCard";
+import TrackDetailsCard from "../Components/TrackDetailsCard";
 import NavBar from "../Components/NavBar";
 import styled from "@emotion/styled";
+import { getTrackById } from "../services/TrackServices";
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -17,34 +18,14 @@ function TrackDetails() {
   const [trackData, setTrackData] = useState([]);
   const { id } = useParams();
 
-  const TRACK_INFO_QUERY = `
-    query {
-    getTrackInfo(id:${id}){
-      id,
-      title,
-      artist,
-      genre,
-      duration
-    }
-  }
-  `;
-
   useEffect(() => {
-    fetch("/graphql", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query: TRACK_INFO_QUERY }),
-    })
-      .then((res) => res.json())
-      .then((trackInfo) =>
-        setTrackData(
-          trackInfo.data.getTrackInfo.length > 0
-            ? trackInfo.data.getTrackInfo[0]
-            : null
-        )
-      )
-      .catch((err) => console.log(err));
-  }, [TRACK_INFO_QUERY]);
+    (async () => {
+      const data = await getTrackById(id);
+      setTrackData(
+        data.data.getTrackInfo.length > 0 ? data.data.getTrackInfo[0] : null
+      );
+    })();
+  }, []);
 
   if (trackData) {
     return (
@@ -52,7 +33,7 @@ function TrackDetails() {
         <NavBar />
         <Wrapper>
           <title>{trackData.title}</title>
-          <TrackCardDetails track={trackData} />
+          <TrackDetailsCard track={trackData} />
         </Wrapper>
       </>
     );

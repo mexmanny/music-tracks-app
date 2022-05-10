@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import TrackCard from "../Components/TrackCard/index";
 import styled from "@emotion/styled";
+import { getAllTracks } from "../services/TrackServices";
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -11,18 +12,6 @@ const Wrapper = styled.div`
   h1 {
     color: white;
   }
-`;
-
-const TRACKS_QUERY = `
-query {
-  getAllTracks{
-    id,
-    title,
-    artist,
-    genre,
-    duration
-  }
-}
 `;
 
 const tracksStyle = {
@@ -35,14 +24,12 @@ function TrackList() {
   const [trackData, setTrackData] = useState([]);
 
   useEffect(() => {
-    fetch("/graphql", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query: TRACKS_QUERY }),
-    })
-      .then((res) => res.json())
-      .then((trackInfo) => setTrackData(trackInfo.data.getAllTracks));
+    (async () => {
+      const data = await getAllTracks();
+      setTrackData(data.data.getAllTracks);
+    })();
   }, []);
+
   return (
     <Wrapper>
       <h1>TRACKS</h1>
