@@ -1,6 +1,6 @@
 import "./App.css";
-import TrackList from "./Pages/TrackList";
-import TrackDetails from "./Pages/TrackDetails";
+import TrackList from "./pages/TrackList";
+import TrackDetails from "./pages/TrackDetails";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
